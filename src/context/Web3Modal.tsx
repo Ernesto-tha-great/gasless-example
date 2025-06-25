@@ -13,7 +13,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { State, WagmiProvider, useAccount } from "wagmi";
 import { ethers } from "ethers";
 import { BiconomySmartAccountV2 } from "@biconomy/account";
-import { PaymasterMode } from "@biconomy/paymaster";
 import { createSmartAccount } from "../configs/biconomy";
 
 const queryClient = new QueryClient();
@@ -95,7 +94,6 @@ function AuthProvider({ children }: { children: ReactNode }) {
   );
 }
 
-// Combined Provider
 export default function Web3ModalProvider({
   children,
   initialState,

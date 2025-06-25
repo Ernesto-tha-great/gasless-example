@@ -1,5 +1,5 @@
 import { abi } from "./abi";
 
-const counterAddress = "0x90da9e3701dfab50cc646c4e21eb40207a3e2d02";
+const counterAddress = "0x7331211fe21f9a2e43e2f2c60a48e99f7fda8053";
 
 export { counterAddress, abi };

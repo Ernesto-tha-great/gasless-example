@@ -1,7 +1,7 @@
 import { createSmartAccountClient } from "@biconomy/account";
 import { ethers } from "ethers";
 
-export const BICONOMY_CHAIN_ID = 84532;
+export const BICONOMY_CHAIN_ID = 2810;
 
 export const createSmartAccount = async (
   provider: ethers.providers.Web3Provider
@@ -9,7 +9,7 @@ export const createSmartAccount = async (
   const signer = provider.getSigner();
 
   const config = {
-    chainId: 84532,
+    chainId: 2810,
     biconomyPaymasterApiKey:
       process.env.NEXT_PUBLIC_BICONOMY_PAYMASTER_API_KEY!,
     bundlerUrl: process.env.NEXT_PUBLIC_BICONOMY_BUNDLER_URL!,
